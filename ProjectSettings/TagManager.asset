@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RoomLight
+  - SamplesInfoPanel
+  - tentacule2
+  - tentacule1
+  - deleteador
   layers:
   - Default
   - TransparentFX
