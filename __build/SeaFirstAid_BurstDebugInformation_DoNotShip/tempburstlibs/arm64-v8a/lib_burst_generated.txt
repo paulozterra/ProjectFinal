@@ -1,4 +1,4 @@
-Library: C:\Users\eduardo.castro\UnityProjects\SeaFirstAid\Temp\StagingArea\tempburstlibs\arm64-v8a\lib_burst_generated
+Library: C:\Users\eduardo.castro\UnityProjects\IHC-SeaFirstAid\Temp\StagingArea\tempburstlibs\arm64-v8a\lib_burst_generated
 --platform=Android
 --backend=burst-llvm-14
 --target=ARMV8A_AARCH64
@@ -108,6 +108,7 @@ Library: C:\Users\eduardo.castro\UnityProjects\SeaFirstAid\Temp\StagingArea\temp
 --compilation-defines=ENABLE_TERRAIN
 --compilation-defines=ENABLE_TILEMAP
 --compilation-defines=ENABLE_TIMELINE
+--compilation-defines=ENABLE_INPUT_SYSTEM
 --compilation-defines=ENABLE_LEGACY_INPUT_MANAGER
 --compilation-defines=TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 --compilation-defines=PACKAGE_PHYSICS
@@ -121,24 +122,37 @@ Library: C:\Users\eduardo.castro\UnityProjects\SeaFirstAid\Temp\StagingArea\temp
 --compilation-defines=USING_XR_SDK_OCULUS
 --compilation-defines=ENABLE_VR_MODULE
 --compilation-defines=ENABLE_XR_MODULE
+--compilation-defines=ENABLE_INPUT_SYSTEM_PACKAGE
+--compilation-defines=DISABLE_BUILTIN_INPUT_SYSTEM_OCULUS
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_VR
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_XR
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_PHYSICS2D
+--compilation-defines=UNITY_INPUT_SYSTEM_ENABLE_UI
 --compilation-defines=ENABLE_BURST_1_0_0_OR_NEWER
 --compilation-defines=USING_ANIMATION_MODULE
 --compilation-defines=USING_PHYSICS2D_MODULE
+--compilation-defines=PACKAGE_INPUT_SYSTEM_EXISTS
+--compilation-defines=PACKAGE_INPUT_SYSTEM_1_2_0_OR_NEWER_EXISTS
 --compilation-defines=MODULE_AI_EXISTS
 --compilation-defines=MODULE_ANIMATION_EXISTS
 --compilation-defines=MODULE_PHYSICS_EXISTS
 --compilation-defines=MODULE_PHYSICS_2D_EXISTS
 --compilation-defines=MODULE_PARTICLE_SYSTEM_EXISTS
+--compilation-defines=UNITY_INPUT_SYSTEM
 --compilation-defines=XR_MGMT_GTE_320
+--compilation-defines=USING_XR_SDK_OPENXR
 --compilation-defines=USING_COMPATIBLE_OCULUS_XR_PLUGIN_VERSION
 --compilation-defines=USING_URP
 --compilation-defines=USING_MRC_COMPATIBLE_URP_VERSION
 --compilation-defines=OVR_UNITY_ASSET_STORE
---compilation-defines=TIMELINE_FRAMEACCURATE
+--compilation-defines=UNITY_OPENXR_1_5_3
 --compilation-defines=UNITY_ANALYTICS
+--compilation-defines=INPUT_SYSTEM_POSE_VALID
+--compilation-defines=TIMELINE_FRAMEACCURATE
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=C:\Users\eduardo.castro\UnityProjects\SeaFirstAid\Temp\Burst
---output=C:\Users\eduardo.castro\UnityProjects\SeaFirstAid\Temp\StagingArea\tempburstlibs\arm64-v8a\lib_burst_generated
+--temp-folder=C:\Users\eduardo.castro\UnityProjects\IHC-SeaFirstAid\Temp\Burst
+--output=C:\Users\eduardo.castro\UnityProjects\IHC-SeaFirstAid\Temp\StagingArea\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 --pdb-search-paths=Temp/ManagedSymbols/
 
