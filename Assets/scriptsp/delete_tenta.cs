@@ -6,8 +6,8 @@ public class delete_tenta : MonoBehaviour
 {
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other){
-     //   if(other.gameObject.tag=="deleteador"){
+      if(other.CompareTag("deleteador")){
             Destroy(gameObject);
-   
+      }
     }
 }
