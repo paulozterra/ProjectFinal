@@ -147,6 +147,10 @@ Library: C:\Users\eduardo.castro\UnityProjects\IHC-SeaFirstAid\Temp\StagingArea\
 --compilation-defines=USING_MRC_COMPATIBLE_URP_VERSION
 --compilation-defines=OVR_UNITY_ASSET_STORE
 --compilation-defines=UNITY_OPENXR_1_5_3
+--compilation-defines=INCLUDE_PHYSICS_MODULE
+--compilation-defines=INCLUDE_UGUI
+--compilation-defines=INCLUDE_INPUT_SYSTEM
+--compilation-defines=INCLUDE_LEGACY_INPUT_HELPERS
 --compilation-defines=UNITY_ANALYTICS
 --compilation-defines=INPUT_SYSTEM_POSE_VALID
 --compilation-defines=TIMELINE_FRAMEACCURATE

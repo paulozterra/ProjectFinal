@@ -275,6 +275,20 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974
 	float ___w_3;
 };
 
+// System.Single
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	// System.Single System.Single::m_value
+	float ___m_value_0;
+};
+
+// System.UInt32
+struct UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B 
+{
+	// System.UInt32 System.UInt32::m_value
+	uint32_t ___m_value_0;
+};
+
 // System.UInt64
 struct UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF 
 {
@@ -555,6 +569,14 @@ struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
 };
 
 // UnityEngine.Quaternion
+
+// System.Single
+
+// System.Single
+
+// System.UInt32
+
+// System.UInt32
 
 // System.UInt64
 
@@ -866,6 +888,9 @@ IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_ActivateSecondaryView(int32_t, int
 #if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
 IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_RegisterFunctionCallbacks(Il2CppMethodPointer, Il2CppMethodPointer);
 #endif
+#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
+IL2CPP_EXTERN_C void DEFAULT_CALL MockRuntime_MetaPerformanceMetrics_SeedCounterOnce_Float(char*, float, uint32_t);
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -1063,7 +1088,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t MockRuntime_BeforeFunctionCallback_m7
 		BeforeFunctionDelegate_t767D515AE77977BF5EA389123E37EB685DDADDDA* L_1;
 		L_1 = MockRuntime_GetBeforeFunctionCallback_m8A4593BAA8491A259FFD295B1A9924621780188F(L_0, NULL);
 		V_0 = L_1;
-		// if(null == callback)
+		// if (null == callback)
 		BeforeFunctionDelegate_t767D515AE77977BF5EA389123E37EB685DDADDDA* L_2 = V_0;
 		if (L_2)
 		{
@@ -1862,6 +1887,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_MockRuntime_RegisterFunction
 	#else
 	il2cppPInvokeFunc(____0_hookBefore_marshaled, ____1_hookAfter_marshaled);
 	#endif
+
+}
+// System.Void UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::MetaPerformanceMetrics_SeedCounterOnce_Float(System.String,System.Single,System.UInt32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MockRuntime_MetaPerformanceMetrics_SeedCounterOnce_Float_m36A5817DD1A8817E727EC2389953495B6AFB5023 (String_t* ___0_xrPathString, float ___1_value, uint32_t ___2_unit, const RuntimeMethod* method) 
+{
+	typedef void (DEFAULT_CALL *PInvokeFunc) (char*, float, uint32_t);
+	#if !FORCE_PINVOKE_INTERNAL && !FORCE_PINVOKE_mock_api_INTERNAL
+	static PInvokeFunc il2cppPInvokeFunc;
+	if (il2cppPInvokeFunc == NULL)
+	{
+		int parameterSize = sizeof(char*) + sizeof(float) + sizeof(uint32_t);
+		il2cppPInvokeFunc = il2cpp_codegen_resolve_pinvoke<PInvokeFunc>(IL2CPP_NATIVE_STRING("mock_api"), "MockRuntime_MetaPerformanceMetrics_SeedCounterOnce_Float", IL2CPP_CALL_DEFAULT, CHARSET_NOT_SPECIFIED, parameterSize, false);
+		IL2CPP_ASSERT(il2cppPInvokeFunc != NULL);
+	}
+	#endif
+
+	// Marshaling of parameter '___0_xrPathString' to native representation
+	char* ____0_xrPathString_marshaled = NULL;
+	____0_xrPathString_marshaled = il2cpp_codegen_marshal_string(___0_xrPathString);
+
+	// Native function invocation
+	#if FORCE_PINVOKE_INTERNAL || FORCE_PINVOKE_mock_api_INTERNAL
+	reinterpret_cast<PInvokeFunc>(MockRuntime_MetaPerformanceMetrics_SeedCounterOnce_Float)(____0_xrPathString_marshaled, ___1_value, ___2_unit);
+	#else
+	il2cppPInvokeFunc(____0_xrPathString_marshaled, ___1_value, ___2_unit);
+	#endif
+
+	// Marshaling cleanup of parameter '___0_xrPathString' native representation
+	il2cpp_codegen_marshal_free(____0_xrPathString_marshaled);
+	____0_xrPathString_marshaled = NULL;
 
 }
 // System.Void UnityEngine.XR.OpenXR.Features.Mock.MockRuntime::.ctor()

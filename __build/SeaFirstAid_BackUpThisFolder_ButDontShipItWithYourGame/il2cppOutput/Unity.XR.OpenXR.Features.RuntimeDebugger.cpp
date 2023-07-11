@@ -610,7 +610,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeDebuggerOpenXRFeature_RecvMsg_m53
 		// lutOffset = lutSize;
 		uint32_t L_4 = V_1;
 		__this->___lutOffset_20 = L_4;
-		// Marshal.Copy(lutPtr, lutData, 0, (int) lutSize);
+		// Marshal.Copy(lutPtr, lutData, 0, (int)lutSize);
 		intptr_t L_5 = V_0;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_6 = V_2;
 		uint32_t L_7 = V_1;
@@ -632,48 +632,60 @@ IL_002f:
 		uint32_t L_11 = V_6;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_12 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)il2cpp_codegen_add((int32_t)L_10, (int32_t)L_11)));
 		V_7 = L_12;
-		// Marshal.Copy(ptr1, data, 0, (int)size1);
-		intptr_t L_13 = V_3;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = V_7;
-		uint32_t L_15 = V_4;
-		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
-		Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77(L_13, L_14, 0, L_15, NULL);
-		// if (size2 > 0)
-		uint32_t L_16 = V_6;
-		if ((!(((uint32_t)L_16) > ((uint32_t)0))))
+		// if (size1 > 0)
+		uint32_t L_13 = V_4;
+		if ((!(((uint32_t)L_13) > ((uint32_t)0))))
 		{
-			goto IL_006c;
+			goto IL_005f;
+		}
+	}
+	{
+		// Marshal.Copy(ptr1, data, 0, (int)size1);
+		intptr_t L_14 = V_3;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_15 = V_7;
+		uint32_t L_16 = V_4;
+		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
+		Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77(L_14, L_15, 0, L_16, NULL);
+	}
+
+IL_005f:
+	{
+		// if (size2 > 0)
+		uint32_t L_17 = V_6;
+		if ((!(((uint32_t)L_17) > ((uint32_t)0))))
+		{
+			goto IL_0071;
 		}
 	}
 	{
 		// Marshal.Copy(ptr2, data, (int)size1, (int)size2);
-		intptr_t L_17 = V_5;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_18 = V_7;
-		uint32_t L_19 = V_4;
-		uint32_t L_20 = V_6;
+		intptr_t L_18 = V_5;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_19 = V_7;
+		uint32_t L_20 = V_4;
+		uint32_t L_21 = V_6;
 		il2cpp_codegen_runtime_class_init_inline(Marshal_tD976A56A90263C3CE2B780D4B1CADADE2E70B4A7_il2cpp_TypeInfo_var);
-		Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77(L_17, L_18, L_19, L_20, NULL);
+		Marshal_Copy_mF7402FFDB520EA1B8D1C32B368DBEE4B13F1BE77(L_18, L_19, L_20, L_21, NULL);
 	}
 
-IL_006c:
+IL_0071:
 	{
 		// Native_EndDataAccess();
 		il2cpp_codegen_runtime_class_init_inline(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_il2cpp_TypeInfo_var);
 		RuntimeDebuggerOpenXRFeature_Native_EndDataAccess_m8B9B950ACB83A084E1A149A6391C1BF6DD08704D(NULL);
 		// PlayerConnection.instance.Send(kPlayerToEditorSendDebuggerOutput, lutData);
-		PlayerConnection_tE21E6206D6FC40F07B3842D83BCB0732C9244E53* L_21;
-		L_21 = PlayerConnection_get_instance_mF08ABE514910AD8B105D42561CF97CBF135ABD3B(NULL);
-		Guid_t L_22 = ((RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_StaticFields*)il2cpp_codegen_static_fields_for(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_il2cpp_TypeInfo_var))->___kPlayerToEditorSendDebuggerOutput_17;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_23 = V_2;
-		NullCheck(L_21);
-		PlayerConnection_Send_mBFE41D75C28DF0885455CE809D40C489818F91B7(L_21, L_22, L_23, NULL);
+		PlayerConnection_tE21E6206D6FC40F07B3842D83BCB0732C9244E53* L_22;
+		L_22 = PlayerConnection_get_instance_mF08ABE514910AD8B105D42561CF97CBF135ABD3B(NULL);
+		Guid_t L_23 = ((RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_StaticFields*)il2cpp_codegen_static_fields_for(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_il2cpp_TypeInfo_var))->___kPlayerToEditorSendDebuggerOutput_17;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_24 = V_2;
+		NullCheck(L_22);
+		PlayerConnection_Send_mBFE41D75C28DF0885455CE809D40C489818F91B7(L_22, L_23, L_24, NULL);
 		// PlayerConnection.instance.Send(kPlayerToEditorSendDebuggerOutput, data);
-		PlayerConnection_tE21E6206D6FC40F07B3842D83BCB0732C9244E53* L_24;
-		L_24 = PlayerConnection_get_instance_mF08ABE514910AD8B105D42561CF97CBF135ABD3B(NULL);
-		Guid_t L_25 = ((RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_StaticFields*)il2cpp_codegen_static_fields_for(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_il2cpp_TypeInfo_var))->___kPlayerToEditorSendDebuggerOutput_17;
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_26 = V_7;
-		NullCheck(L_24);
-		PlayerConnection_Send_mBFE41D75C28DF0885455CE809D40C489818F91B7(L_24, L_25, L_26, NULL);
+		PlayerConnection_tE21E6206D6FC40F07B3842D83BCB0732C9244E53* L_25;
+		L_25 = PlayerConnection_get_instance_mF08ABE514910AD8B105D42561CF97CBF135ABD3B(NULL);
+		Guid_t L_26 = ((RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_StaticFields*)il2cpp_codegen_static_fields_for(RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA_il2cpp_TypeInfo_var))->___kPlayerToEditorSendDebuggerOutput_17;
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_27 = V_7;
+		NullCheck(L_25);
+		PlayerConnection_Send_mBFE41D75C28DF0885455CE809D40C489818F91B7(L_25, L_26, L_27, NULL);
 		// }
 		return;
 	}
@@ -794,9 +806,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeDebuggerOpenXRFeature_Native_EndD
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RuntimeDebuggerOpenXRFeature__ctor_m2DC84C4F7091238BD265B1B96D5719203C46C393 (RuntimeDebuggerOpenXRFeature_t1E3C60D2636DEC25D95E63BB3300DBFC5E9057BA* __this, const RuntimeMethod* method) 
 {
 	{
-		// public UInt32 cacheSize=1024*1024;
+		// public UInt32 cacheSize = 1024 * 1024;
 		__this->___cacheSize_18 = ((int32_t)1048576);
-		// public UInt32 perThreadCacheSize=50*1024;
+		// public UInt32 perThreadCacheSize = 50 * 1024;
 		__this->___perThreadCacheSize_19 = ((int32_t)51200);
 		OpenXRFeature__ctor_m120460E34ECC22ED2DB96797A6DCB5C870E78852(__this, NULL);
 		return;
