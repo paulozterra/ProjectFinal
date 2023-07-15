@@ -9,6 +9,8 @@ TagManager:
   - tentacule2
   - tentacule1
   - deleteador
+  - vinegar
+  - water
   layers:
   - Default
   - TransparentFX
