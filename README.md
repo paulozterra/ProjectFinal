@@ -1,6 +1,6 @@
 # ProjectFinal
 
-# Instrucciones para despligue
+## Instrucciones para despligue
 
 1. Clonar el Repositorio.
 2. Abrir la carpeta del Repositorio desde Unity Hub.
